@@ -1,23 +1,6 @@
 // --------------------- slider ---------------------
-$(function (){
+$(document).ready(function (){
 
-  $(".customers__slider").slick({
-    dots: true,
-    appendDots: $(".customers__slider-dots"),
-    arrows: false,
-    slidesToShow: 2,
-    infinite: true,
-    draggable: false,
-    waitForAnimate: false,
-  })
-  $(".customers__prev").on('click', function (e) {
-    e.preventDefault()
-    $('.customers__slider').slick('slickPrev')
-  })
-  $(".customers__next").on('click', function (e) {
-    e.preventDefault()
-    $('.customers__slider').slick('slickNext')
-  })
   // ------------------- accordeon ------------------------
   $('.asked__acc-link').on('click', function (e) {
     e.preventDefault()
